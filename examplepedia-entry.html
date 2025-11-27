@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Examplepedia entry demo</title>
+
+    <!-- auto-switch Bootstrap between light and dark mode -->
+    <script>
+      // set theme to the viewer's preferred color scheme
+      function updateTheme() {
+        const colorMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.querySelector("html").setAttribute("data-bs-theme", colorMode);
+      }
+
+      // set theme on load
+      updateTheme();
+
+      // update theme when the preferred scheme changes
+      window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", updateTheme);
+    </script>
+
+    <style>
+      @font-face {
+        font-family: "Popping-Cute";
+        src: url("Popping-Cute.woff") format("woff");
+      }
+
+      .logo {
+        font-family: "Popping-Cute", sans-serif;
+        background-image: linear-gradient(to right, blue, green, orange, red, violet, blue, green, yellow, orange, red);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+        text-stroke: 1px black;
+        -webkit-text-stroke: 1px black;
+        letter-spacing: -0.1rem;
+        font-size: 1.5em;
+      }
+
+      img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+      }
+    </style>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container">
+        <a href="examplepedia.html" class="navbar-brand">
+          <span class="logo d-inline-block">EXAMPLEPEDIA</span>
+          <small class="ms-1 text-muted d-none d-md-inline-block">by Firstname Lastname</small>
+        </a>
+
+        <form class="d-flex" role="search" action="https://www.google.com/search" method="GET">
+          <input type="hidden" name="domains" value="www.toonopedia.com" />
+          <input type="hidden" name="sitesearch" value="www.toonopedia.com" />
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="q" />
+          <button class="btn btn-outline-success d-none" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <article class="container mt-5">
+      <h1 class="display-1 mb-3">Character / Company / Creator Name</h1>
+
+      <div class="row">
+        <aside class="col-md-6 col-lg-4 col-xl-3 mb-5">
+          <img src="Green_Jet.jpeg" class="rounded shadow mb-5" />
+
+          <div class="alert border mb-0">
+            <ul class="list-unstyled mb-0">
+              <li><b>Property:</b> Lorem ipsum</li>
+              <li><b>Consectetur:</b> Egestas orci</li>
+              <li><b>Adipiscing:</b> Dolor sit amet</li>
+              <li><b>Convallis:</b> Dolor sit amet</li>
+              <li><b>Placerat:</b> Mauris tincidunt nisl eu consequat imperdiet</li>
+            </ul>
+          </div>
+        </aside>
+
+        <main class="col-md-6 col-lg-8 col-xl-9">
+          <p class="lead">
+            The Green Jet is a re-printed version of the <a href="#">Green Lama</a>, much like Atomaster is a re-printed
+            version of fellow Spark hero, Atoman. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+            facilisis, ligula a placerat convallis, justo felis molestie mi, ut egestas orci magna eget lorem.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec ex ultricies massa rutrum rhoncus.
+            Maecenas luctus finibus pretium. Mauris sit amet lacus nulla. Ut dui nulla, facilisis maximus nibh accumsan,
+            luctus consequat nulla. Duis suscipit justo et mattis feugiat. Mauris tellus risus, elementum sed vehicula
+            nec, suscipit vitae lectus. Donec quis eleifend enim. Phasellus bibendum convallis mauris, a convallis enim
+            dictum non. Suspendisse hendrerit commodo neque, id tincidunt massa sollicitudin non. Sed nisl nisl,
+            malesuada non metus ut, posuere bibendum orci. Class aptent taciti sociosqu ad litora torquent per conubia
+            nostra, per inceptos himenaeos. Aenean neque lorem, vehicula eget malesuada vitae, hendrerit sed felis.
+            Pellentesque congue tincidunt sem. Donec neque quam, aliquam at tempor porta, rutrum a metus.
+          </p>
+
+          <p>
+            Sed ultricies diam vel justo placerat fringilla. Cras pellentesque feugiat eleifend. Etiam auctor egestas
+            augue. Etiam aliquam tristique ligula vitae lacinia. Suspendisse potenti. Duis molestie, diam eu ultrices
+            finibus, diam dui rutrum turpis, non sagittis est dolor eget odio. Nam ultrices blandit nulla vitae
+            pellentesque.
+          </p>
+
+          <p>
+            Vestibulum sapien lacus, condimentum eget suscipit eu, blandit a justo. Donec quis felis vitae elit ornare
+            dapibus vel in arcu. Nullam elementum eros eget felis sollicitudin feugiat. Phasellus vulputate, lacus et
+            faucibus maximus, lectus nisl convallis magna, quis dapibus dolor lectus vestibulum libero. Nam eget elit
+            cursus, pulvinar neque ac, faucibus lectus. Maecenas egestas aliquam tristique. In at eros mi. Donec nibh
+            lorem, ultricies a elit at, rhoncus tincidunt purus.
+          </p>
+
+          <p>
+            Quisque scelerisque, enim eget volutpat consequat, felis ex mattis elit, sed cursus metus est non magna.
+            Vivamus vel feugiat lorem. Integer non nibh sed ex accumsan condimentum. Vivamus sit amet porta nisi.
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas ut
+            velit ut mi tincidunt malesuada in vehicula enim. Nam ut quam ut ligula efficitur efficitur. Maecenas sed mi
+            vitae felis ultrices accumsan. Duis vitae dui justo. Quisque vitae nibh molestie, malesuada odio in,
+            interdum enim. Ut sollicitudin aliquam ultrices. Aliquam erat volutpat. Ut non ullamcorper nunc.
+          </p>
+
+          <p>
+            Praesent tempus neque sit amet lacus rhoncus, id suscipit orci consequat. Sed volutpat hendrerit lacus,
+            dapibus venenatis ipsum viverra nec. Phasellus mollis tellus ut erat vehicula vehicula. Curabitur et mi et
+            quam gravida elementum. Vivamus fermentum diam ac libero malesuada egestas. Vivamus cursus ac sem a
+            placerat. Integer malesuada congue lorem, eu facilisis risus dictum sit amet.
+          </p>
+        </main>
+      </div>
+    </article>
+
+    <footer class="pb-5 my-5 container">
+      <p>
+        <a href="examplepedia.html">Home</a> • <a href="examplepedia.html">FAQ</a> •
+        <a href="examplepedia.html">Contact</a> • <a href="examplepedia.html">About</a> •
+        <a href="examplepedia.html">Privacy Policy</a> •
+        <a href="examplepedia.html">Terms of Service</a>
+      </p>
+
+      <p>
+        Copyright notice © 2001-2011 Firstname Lastname. Praesent tortor tellus, placerat id aliquam ac, scelerisque id
+        enim. Phasellus ultricies lorem justo, nec fermentum sapien porttitor et.
+      </p>
+    </footer>
+  </body>
+</html>

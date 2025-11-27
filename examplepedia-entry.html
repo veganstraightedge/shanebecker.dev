@@ -36,7 +36,8 @@
         text-stroke: 1px black;
         -webkit-text-stroke: 1px black;
         letter-spacing: -0.1rem;
-        font-size: 1.5em;
+        font-size: 2em;
+        line-height: 1.75rem;
       }
 
       html[data-bs-theme="dark"] .logo {
@@ -64,21 +65,33 @@
   </head>
 
   <body>
-    <nav class="navbar bg-body-tertiary">
+    <div class="bg-body-tertiary py-3">
       <div class="container">
-        <a href="examplepedia.html" class="navbar-brand">
-          <span class="logo d-inline-block">EXAMPLEPEDIA</span>
-          <small class="ms-1 text-muted d-none d-md-inline-block">by Firstname Lastname</small>
-        </a>
+        <div class="row d-flex align-items-center">
+          <div class="col-12 col-md-8 text-center text-md-start">
+            <a href="examplepedia.html" class="text-decoration-none">
+              <span class="logo text-uppercase d-inline-block">Examplepedia</span>
+              <small class="text-muted ms-0 ms-sm-1 mb-2 d-block d-md-inline-block">by Firstname Lastname</small>
+            </a>
+          </div>
 
-        <form class="d-flex" role="search" action="https://www.google.com/search" method="GET">
-          <input type="hidden" name="domains" value="www.toonopedia.com" />
-          <input type="hidden" name="sitesearch" value="www.toonopedia.com" />
-          <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="q" />
-          <button class="btn btn-outline-success d-none" type="submit">Search</button>
-        </form>
+          <div class="col-12 col-md-4 text-center text-md-end">
+            <form role="search" action="https://www.google.com/search" method="get">
+              <input type="hidden" name="domains" value="www.toonopedia.com" />
+              <input type="hidden" name="sitesearch" value="www.toonopedia.com" />
+              <input
+                class="form-control d-inline-block w-75 mx-auto me-sm-0 mt-2 mt-sm-0"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                name="q"
+              />
+              <button class="btn btn-outline-success d-none" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
       </div>
-    </nav>
+    </div>
 
     <article class="container mt-5">
       <h1 class="display-1 mb-4">Character / Company / Creator Name</h1>

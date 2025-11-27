@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Example demo</title>
+
+    <!-- auto-switch Bootstrap between light and dark mode -->
+    <script>
+      // set theme to the viewer's preferred color scheme
+      function updateTheme() {
+        const colorMode = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        document.querySelector("html").setAttribute("data-bs-theme", colorMode);
+      }
+
+      // set theme on load
+      updateTheme();
+
+      // update theme when the preferred scheme changes
+      window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", updateTheme);
+    </script>
+
+    <style>
+      @font-face {
+        font-family: "Popping-Cute";
+        src: url("Popping-Cute.woff") format("woff");
+      }
+      h1 {
+        position: relative;
+        margin: 0 auto;
+        display: inline-block;
+        margin: 0 auto;
+        float: center;
+      }
+      h1 small {
+        font-size: 0.3em;
+        display: block;
+        padding-left: 0.5rem;
+        font-weight: normal;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      h1 b {
+        font-family: "Popping-Cute", sans-serif;
+        background: linear-gradient(to right, hsl(0, 100%, 50%), hsl(180, 100%, 50%));
+        background-image: linear-gradient(to right, blue, green, orange, red, violet, blue, green, yellow, orange, red);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+        display: inline-flexbox;
+        text-stroke: 3px black;
+        -webkit-text-stroke: 3px black;
+        letter-spacing: -0.2rem;
+        text-align: center;
+        font-size: 1.5em;
+        /*padding-right: 0.05rem;*/
+        /*padding-top: 1rem;*/
+        position: relative;
+        top: 0.6rem;
+        left: 0;
+      }
+      h1 sup {
+        display: inline-block;
+        font-size: 0.5em;
+        position: absolute;
+        top: 1em;
+      }
+    </style>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="pt-5 text-center">
+        <h1 class="display-1"><small>Firstname Lastname’s</small><b>EXAMPLEPEDIA</b><sup>™</sup></h1>
+        <h2 class="fst-italic">A Subtitle of Descriptive Description</h2>
+        <p class="fst-italic fw-normal">By Firstname Lastname</p>
+      </header>
+
+      <nav class="text-center mb-3 pb-3 border-bottom">
+        <a href="#">Home</a> • <a href="#">Link text</a> • <a href="#">New link</a> • <a href="#">Another link</a> •
+        <a href="#">Another link</a> • <a href="#">Another link</a> • <a href="#">Another link</a> •
+        <a href="#">Another link</a> • <a href="#">Another link</a> • <a href="#">Another link</a> •
+        <a href="#">Another link</a> • <a href="#">Last links</a> •
+        <a href="#">Final link</a>
+      </nav>
+
+      <main>
+        <section class="mb-5">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis facilisis, ligula a placerat convallis, justo
+            felis molestie mi, ut egestas orci magna eget lorem.
+          </p>
+
+          <p>
+            Vestibulum a feugiat sapien, ac cursus ligula. Suspendisse laoreet dolor sed diam laoreet finibus. Mauris
+            sit amet mi non dui fringilla rhoncus quis tincidunt turpis.
+          </p>
+
+          <p>
+            Praesent tortor tellus, placerat id aliquam ac, scelerisque id enim. Phasellus ultricies lorem justo, nec
+            fermentum sapien porttitor et.
+          </p>
+
+          <p>
+            Mauris tincidunt nisl eu consequat imperdiet. Fusce egestas, quam at facilisis facilisis, nisi magna ornare
+            dui, non aliquet ipsum lectus sed neque.
+          </p>
+
+          <p>
+            Nullam eleifend vehicula lorem ac congue. Morbi vel ex scelerisque massa semper aliquam. Mauris posuere in
+            tortor id iaculis. Nulla facilisi. .
+          </p>
+
+          <p>
+            <b>New stuff:</b><br />
+            Lorem ipsum dolor sit amet<br />
+            consectetur adipiscing elit<br />
+            Duis facilisis<br />
+            ligula a placerat convallis<br />
+            justo felis molestie mi<br />
+            ut egestas orci magna eget <a href="https://example.com">link</a>
+          </p>
+        </section>
+
+        <p class="fw-bold">Sitemap links:</p>
+
+        <section class="mb-5" id="a">
+          <h2 class="display-2">A</h2>
+
+          <a href="#">lorem ipsum dolor sit amet</a> • <a href="#">consectetur adipiscing elit</a> •
+          <a href="#">Sed ut perspiciatis</a> • <a href="#">unde omnis</a> • <a href="#">iste natus error</a> •
+          <a href="#">sit voluptatem accusantium</a> • <a href="#">doloremque laudantium</a> •
+          <a href="#">totam rem aperiam</a> • <a href="#">eaque ipsa</a> • <a href="#">quae ab illo</a> •
+          <a href="#">inventore veritatis</a> • <a href="#">et quasi architecto</a> •
+          <a href="#">beatae vitae dicta</a> • <a href="#">sunt explicabo</a> • <a href="#">Nemo enim ipsam</a> •
+          <a href="#">voluptatem quia</a> • <a href="#">voluptas sit</a> • <a href="#">aspernatur</a> •
+          <a href="#">aut odit aut fugit</a> • <a href="#">sed quia</a> • <a href="#">consequuntur magni</a> •
+          <a href="#">dolores eos qui</a> • <a href="#">ratione voluptatem</a> • <a href="#">sequi nesciunt</a> •
+          <a href="#">Neque</a> • <a href="#">porro</a> • <a href="#">quisquam est</a> • <a href="#">qui dolorem</a> •
+          <a href="#">ipsum quia</a> • <a href="#">dolor sit amet</a> • <a href="#">consectetur</a> •
+          <a href="#">adipisci velit</a> • <a href="#">sed quia non</a> • <a href="#">numquam</a> •
+          <a href="#">eius modi tempora</a> • <a href="#">incidunt ut</a> • <a href="#">labore et dolore</a> •
+          <a href="#">magnam aliquam</a> • <a href="#">quaerat voluptatem</a> • <a href="#">Ut enim ad</a> •
+          <a href="#">minima veniam</a> • <a href="#">quis nostrum</a> • <a href="#">exercitationem</a> •
+          <a href="#">ullam corporis</a> • <a href="#">suscipit laboriosam</a> • <a href="#">nisi ut aliquid</a> •
+          <a href="#">ex ea</a> • <a href="#">commodi consequatur</a> • <a href="#">Quis autem vel</a> •
+          <a href="#">eum iure</a> • <a href="#">reprehenderit qui</a> • <a href="#">in ea voluptate</a> •
+          <a href="#">velit esse quam</a> • <a href="#">nihil molestiae</a> • <a href="#">consequatur</a> •
+          <a href="#">vel illum</a> • <a href="#">qui dolorem eum</a> • <a href="#">fugiat quo</a> •
+          <a href="#">voluptas nulla</a> • <a href="#">pariatur</a> • <a href="#">voluptatem</a>
+        </section>
+
+        <section class="mb-5" id="b">
+          <h2 class="display-2">B</h2>
+
+          <a href="#">lorem ipsum dolor sit amet</a> • <a href="#">consectetur adipiscing elit</a> •
+          <a href="#">Sed ut perspiciatis</a> • <a href="#">unde omnis</a> • <a href="#">iste natus error</a> •
+          <a href="#">sit voluptatem accusantium</a> • <a href="#">doloremque laudantium</a> •
+          <a href="#">totam rem aperiam</a> • <a href="#">eaque ipsa</a> • <a href="#">quae ab illo</a> •
+          <a href="#">inventore veritatis</a> • <a href="#">et quasi architecto</a> •
+          <a href="#">beatae vitae dicta</a> • <a href="#">sunt explicabo</a> • <a href="#">Nemo enim ipsam</a> •
+          <a href="#">voluptatem quia</a> • <a href="#">voluptas sit</a> • <a href="#">aspernatur</a> •
+          <a href="#">aut odit aut fugit</a> • <a href="#">sed quia</a> • <a href="#">consequuntur magni</a> •
+          <a href="#">dolores eos qui</a> • <a href="#">ratione voluptatem</a> • <a href="#">sequi nesciunt</a> •
+          <a href="#">Neque</a> • <a href="#">porro</a> • <a href="#">quisquam est</a> • <a href="#">qui dolorem</a> •
+          <a href="#">ipsum quia</a> • <a href="#">dolor sit amet</a> • <a href="#">consectetur</a> •
+          <a href="#">adipisci velit</a> • <a href="#">sed quia non</a> • <a href="#">numquam</a> •
+          <a href="#">eius modi tempora</a> • <a href="#">incidunt ut</a> • <a href="#">labore et dolore</a> •
+          <a href="#">magnam aliquam</a> • <a href="#">quaerat voluptatem</a> • <a href="#">Ut enim ad</a> •
+          <a href="#">minima veniam</a> • <a href="#">quis nostrum</a> • <a href="#">exercitationem</a> •
+          <a href="#">ullam corporis</a> • <a href="#">suscipit laboriosam</a> • <a href="#">nisi ut aliquid</a> •
+          <a href="#">ex ea</a> • <a href="#">commodi consequatur</a> • <a href="#">Quis autem vel</a> •
+          <a href="#">eum iure</a> • <a href="#">reprehenderit qui</a> • <a href="#">in ea voluptate</a> •
+          <a href="#">velit esse quam</a> • <a href="#">nihil molestiae</a> • <a href="#">consequatur</a> •
+          <a href="#">vel illum</a> • <a href="#">qui dolorem eum</a> • <a href="#">fugiat quo</a> •
+          <a href="#">voluptas nulla</a> • <a href="#">pariatur</a> • <a href="#">voluptatem</a>
+        </section>
+
+        <section class="mb-5" id="C">
+          <h2 class="display-2">C</h2>
+
+          <a href="#">lorem ipsum dolor sit amet</a> • <a href="#">consectetur adipiscing elit</a> •
+          <a href="#">Sed ut perspiciatis</a> • <a href="#">unde omnis</a> • <a href="#">iste natus error</a> •
+          <a href="#">sit voluptatem accusantium</a> • <a href="#">doloremque laudantium</a> •
+          <a href="#">totam rem aperiam</a> • <a href="#">eaque ipsa</a> • <a href="#">quae ab illo</a> •
+          <a href="#">inventore veritatis</a> • <a href="#">et quasi architecto</a> •
+          <a href="#">beatae vitae dicta</a> • <a href="#">sunt explicabo</a> • <a href="#">Nemo enim ipsam</a> •
+          <a href="#">voluptatem quia</a> • <a href="#">voluptas sit</a> • <a href="#">aspernatur</a> •
+          <a href="#">aut odit aut fugit</a> • <a href="#">sed quia</a> • <a href="#">consequuntur magni</a> •
+          <a href="#">dolores eos qui</a> • <a href="#">ratione voluptatem</a> • <a href="#">sequi nesciunt</a> •
+          <a href="#">Neque</a> • <a href="#">porro</a> • <a href="#">quisquam est</a> • <a href="#">qui dolorem</a> •
+          <a href="#">ipsum quia</a> • <a href="#">dolor sit amet</a> • <a href="#">consectetur</a> •
+          <a href="#">adipisci velit</a> • <a href="#">sed quia non</a> • <a href="#">numquam</a> •
+          <a href="#">eius modi tempora</a> • <a href="#">incidunt ut</a> • <a href="#">labore et dolore</a> •
+          <a href="#">magnam aliquam</a> • <a href="#">quaerat voluptatem</a> • <a href="#">Ut enim ad</a> •
+          <a href="#">minima veniam</a> • <a href="#">quis nostrum</a> • <a href="#">exercitationem</a> •
+          <a href="#">ullam corporis</a> • <a href="#">suscipit laboriosam</a> • <a href="#">nisi ut aliquid</a> •
+          <a href="#">ex ea</a> • <a href="#">commodi consequatur</a> • <a href="#">Quis autem vel</a> •
+          <a href="#">eum iure</a> • <a href="#">reprehenderit qui</a> • <a href="#">in ea voluptate</a> •
+          <a href="#">velit esse quam</a> • <a href="#">nihil molestiae</a> • <a href="#">consequatur</a> •
+          <a href="#">vel illum</a> • <a href="#">qui dolorem eum</a> • <a href="#">fugiat quo</a> •
+          <a href="#">voluptas nulla</a> • <a href="#">pariatur</a> • <a href="#">voluptatem</a>
+        </section>
+
+        <section class="mb-5" id="x">
+          <h2 class="display-2">X</h2>
+
+          <a href="#">lorem ipsum dolor sit amet</a> • <a href="#">consectetur adipiscing elit</a> •
+          <a href="#">Sed ut perspiciatis</a> • <a href="#">unde omnis</a> • <a href="#">iste natus error</a> •
+          <a href="#">sit voluptatem accusantium</a> • <a href="#">doloremque laudantium</a> •
+          <a href="#">totam rem aperiam</a> • <a href="#">eaque ipsa</a> • <a href="#">quae ab illo</a> •
+          <a href="#">inventore veritatis</a> • <a href="#">et quasi architecto</a> •
+          <a href="#">beatae vitae dicta</a> • <a href="#">sunt explicabo</a> • <a href="#">Nemo enim ipsam</a> •
+          <a href="#">voluptatem quia</a> • <a href="#">voluptas sit</a> • <a href="#">aspernatur</a> •
+          <a href="#">aut odit aut fugit</a> • <a href="#">sed quia</a> • <a href="#">consequuntur magni</a> •
+          <a href="#">dolores eos qui</a> • <a href="#">ratione voluptatem</a> • <a href="#">sequi nesciunt</a> •
+          <a href="#">Neque</a> • <a href="#">porro</a> • <a href="#">quisquam est</a> • <a href="#">qui dolorem</a> •
+          <a href="#">ipsum quia</a> • <a href="#">dolor sit amet</a> • <a href="#">consectetur</a> •
+          <a href="#">adipisci velit</a> • <a href="#">sed quia non</a> • <a href="#">numquam</a> •
+          <a href="#">eius modi tempora</a> • <a href="#">incidunt ut</a> • <a href="#">labore et dolore</a> •
+          <a href="#">magnam aliquam</a> • <a href="#">quaerat voluptatem</a> • <a href="#">Ut enim ad</a> •
+          <a href="#">minima veniam</a> • <a href="#">quis nostrum</a> • <a href="#">exercitationem</a> •
+          <a href="#">ullam corporis</a> • <a href="#">suscipit laboriosam</a> • <a href="#">nisi ut aliquid</a> •
+          <a href="#">ex ea</a> • <a href="#">commodi consequatur</a> • <a href="#">Quis autem vel</a> •
+          <a href="#">eum iure</a> • <a href="#">reprehenderit qui</a> • <a href="#">in ea voluptate</a> •
+          <a href="#">velit esse quam</a> • <a href="#">nihil molestiae</a> • <a href="#">consequatur</a> •
+          <a href="#">vel illum</a> • <a href="#">qui dolorem eum</a> • <a href="#">fugiat quo</a> •
+          <a href="#">voluptas nulla</a> • <a href="#">pariatur</a> • <a href="#">voluptatem</a>
+        </section>
+
+        <section class="mb-5" id="y">
+          <h2 class="display-2">Y</h2>
+
+          <a href="#">lorem ipsum dolor sit amet</a> • <a href="#">consectetur adipiscing elit</a> •
+          <a href="#">Sed ut perspiciatis</a> • <a href="#">unde omnis</a> • <a href="#">iste natus error</a> •
+          <a href="#">sit voluptatem accusantium</a> • <a href="#">doloremque laudantium</a> •
+          <a href="#">totam rem aperiam</a> • <a href="#">eaque ipsa</a> • <a href="#">quae ab illo</a> •
+          <a href="#">inventore veritatis</a> • <a href="#">et quasi architecto</a> •
+          <a href="#">beatae vitae dicta</a> • <a href="#">sunt explicabo</a> • <a href="#">Nemo enim ipsam</a> •
+          <a href="#">voluptatem quia</a> • <a href="#">voluptas sit</a> • <a href="#">aspernatur</a> •
+          <a href="#">aut odit aut fugit</a> • <a href="#">sed quia</a> • <a href="#">consequuntur magni</a> •
+          <a href="#">dolores eos qui</a> • <a href="#">ratione voluptatem</a> • <a href="#">sequi nesciunt</a> •
+          <a href="#">Neque</a> • <a href="#">porro</a> • <a href="#">quisquam est</a> • <a href="#">qui dolorem</a> •
+          <a href="#">ipsum quia</a> • <a href="#">dolor sit amet</a> • <a href="#">consectetur</a> •
+          <a href="#">adipisci velit</a> • <a href="#">sed quia non</a> • <a href="#">numquam</a> •
+          <a href="#">eius modi tempora</a> • <a href="#">incidunt ut</a> • <a href="#">labore et dolore</a> •
+          <a href="#">magnam aliquam</a> • <a href="#">quaerat voluptatem</a> • <a href="#">Ut enim ad</a> •
+          <a href="#">minima veniam</a> • <a href="#">quis nostrum</a> • <a href="#">exercitationem</a> •
+          <a href="#">ullam corporis</a> • <a href="#">suscipit laboriosam</a> • <a href="#">nisi ut aliquid</a> •
+          <a href="#">ex ea</a> • <a href="#">commodi consequatur</a> • <a href="#">Quis autem vel</a> •
+          <a href="#">eum iure</a> • <a href="#">reprehenderit qui</a> • <a href="#">in ea voluptate</a> •
+          <a href="#">velit esse quam</a> • <a href="#">nihil molestiae</a> • <a href="#">consequatur</a> •
+          <a href="#">vel illum</a> • <a href="#">qui dolorem eum</a> • <a href="#">fugiat quo</a> •
+          <a href="#">voluptas nulla</a> • <a href="#">pariatur</a> • <a href="#">voluptatem</a>
+        </section>
+
+        <section class="mb-5" id="z">
+          <h2 class="display-2">Z</h2>
+
+          <a href="#">lorem ipsum dolor sit amet</a> • <a href="#">consectetur adipiscing elit</a> •
+          <a href="#">Sed ut perspiciatis</a> • <a href="#">unde omnis</a> • <a href="#">iste natus error</a> •
+          <a href="#">sit voluptatem accusantium</a> • <a href="#">doloremque laudantium</a> •
+          <a href="#">totam rem aperiam</a> • <a href="#">eaque ipsa</a> • <a href="#">quae ab illo</a> •
+          <a href="#">inventore veritatis</a> • <a href="#">et quasi architecto</a> •
+          <a href="#">beatae vitae dicta</a> • <a href="#">sunt explicabo</a> • <a href="#">Nemo enim ipsam</a> •
+          <a href="#">voluptatem quia</a> • <a href="#">voluptas sit</a> • <a href="#">aspernatur</a> •
+          <a href="#">aut odit aut fugit</a> • <a href="#">sed quia</a> • <a href="#">consequuntur magni</a> •
+          <a href="#">dolores eos qui</a> • <a href="#">ratione voluptatem</a> • <a href="#">sequi nesciunt</a> •
+          <a href="#">Neque</a> • <a href="#">porro</a> • <a href="#">quisquam est</a> • <a href="#">qui dolorem</a> •
+          <a href="#">ipsum quia</a> • <a href="#">dolor sit amet</a> • <a href="#">consectetur</a> •
+          <a href="#">adipisci velit</a> • <a href="#">sed quia non</a> • <a href="#">numquam</a> •
+          <a href="#">eius modi tempora</a> • <a href="#">incidunt ut</a> • <a href="#">labore et dolore</a> •
+          <a href="#">magnam aliquam</a> • <a href="#">quaerat voluptatem</a> • <a href="#">Ut enim ad</a> •
+          <a href="#">minima veniam</a> • <a href="#">quis nostrum</a> • <a href="#">exercitationem</a> •
+          <a href="#">ullam corporis</a> • <a href="#">suscipit laboriosam</a> • <a href="#">nisi ut aliquid</a> •
+          <a href="#">ex ea</a> • <a href="#">commodi consequatur</a> • <a href="#">Quis autem vel</a> •
+          <a href="#">eum iure</a> • <a href="#">reprehenderit qui</a> • <a href="#">in ea voluptate</a> •
+          <a href="#">velit esse quam</a> • <a href="#">nihil molestiae</a> • <a href="#">consequatur</a> •
+          <a href="#">vel illum</a> • <a href="#">qui dolorem eum</a> • <a href="#">fugiat quo</a> •
+          <a href="#">voluptas nulla</a> • <a href="#">pariatur</a> • <a href="#">voluptatem</a>
+        </section>
+
+        <section class="mb-5">
+          <p>
+            <b>Section heading:</b><br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis facilisis, ligula a placerat convallis, justo
+            felis molestie mi, ut egestas orci magna eget lorem.
+          </p>
+
+          <p>
+            <a href="#">lorem ipsum dolor sit amet</a> • <a href="#">consectetur adipiscing elit</a> •
+            <a href="#">Sed ut perspiciatis</a> • <a href="#">unde omnis</a> • <a href="#">iste natus error</a> •
+            <a href="#">sit voluptatem accusantium</a> • <a href="#">doloremque laudantium</a>
+          </p>
+
+          <p>
+            <b>Section heading:</b><br />
+            <a href="#">lorem ipsum dolor sit amet</a> • <a href="#">consectetur adipiscing elit</a> •
+            <a href="#">Sed ut perspiciatis</a> • <a href="#">unde omnis</a> • <a href="#">iste natus error</a> •
+            <a href="#">sit voluptatem accusantium</a> • <a href="#">doloremque laudantium</a> •
+            <a href="#">totam rem aperiam</a> • <a href="#">eaque ipsa</a> • <a href="#">quae ab illo</a> •
+            <a href="#">inventore veritatis</a> • <a href="#">et quasi architecto</a> •
+            <a href="#">beatae vitae dicta</a> • <a href="#">sunt explicabo</a> • <a href="#">Nemo enim ipsam</a> •
+            <a href="#">voluptatem quia</a> • <a href="#">voluptas sit</a> • <a href="#">aspernatur</a> •
+            <a href="#">aut odit aut fugit</a> • <a href="#">sed quia</a> • <a href="#">consequuntur magni</a>
+          </p>
+
+          <p>
+            Footer outro sections… Praesent tortor tellus, placerat id aliquam ac, scelerisque id enim. Phasellus
+            ultricies lorem justo, nec fermentum sapien porttitor et.
+          </p>
+
+          <p>
+            Mauris tincidunt nisl eu consequat imperdiet. Fusce egestas, quam at facilisis facilisis, nisi magna ornare
+            dui, non aliquet ipsum lectus sed neque.
+          </p>
+
+          <p>
+            Nullam eleifend vehicula lorem ac congue. Morbi vel ex scelerisque massa semper aliquam. Mauris posuere in
+            tortor id iaculis. Nulla facilisi. .
+          </p>
+
+          <p><b>Contact info:</b> ut egestas orci magna eget <a href="https://example.com">link</a></p>
+        </section>
+
+        <footer class="pb-5 mb-5">
+          Copyright notice © 2001-2011 Firstname Lastname. Praesent tortor tellus, placerat id aliquam ac, scelerisque
+          id enim. Phasellus ultricies lorem justo, nec fermentum sapien porttitor et.
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>

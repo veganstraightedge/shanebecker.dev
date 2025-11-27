@@ -25,6 +25,7 @@
         font-family: "Popping-Cute";
         src: url("Popping-Cute.woff") format("woff");
       }
+
       h1 {
         position: relative;
         margin: 0 auto;
@@ -32,6 +33,7 @@
         margin: 0 auto;
         float: center;
       }
+
       h1 small {
         font-size: 0.3em;
         display: block;
@@ -41,6 +43,7 @@
         top: 0;
         left: 0;
       }
+
       h1 b {
         font-family: "Popping-Cute", sans-serif;
         background: linear-gradient(to right, hsl(0, 100%, 50%), hsl(180, 100%, 50%));
@@ -55,12 +58,16 @@
         letter-spacing: -0.2rem;
         text-align: center;
         font-size: 1.5em;
-        /*padding-right: 0.05rem;*/
-        /*padding-top: 1rem;*/
         position: relative;
         top: 0.6rem;
         left: 0;
       }
+
+      html[data-bs-theme="dark"] h1 b {
+        text-stroke: 1px white;
+        -webkit-text-stroke: 1px white;
+      }
+
       h1 sup {
         display: inline-block;
         font-size: 0.5em;
